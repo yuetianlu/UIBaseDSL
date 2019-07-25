@@ -110,13 +110,16 @@
     };
 }
 
-- (UIScrollView *(^)(UIScrollViewContentInsetAdjustmentBehavior))YContentInsetAdjustmentBehavior {
+- (UIScrollView *(^)(UIScrollViewContentInsetAdjustmentBehavior))YContentInsetAdjustmentBehavior  API_AVAILABLE(ios(11.0)){
     @weakify(self)
     return ^UIScrollView *(UIScrollViewContentInsetAdjustmentBehavior contentInsetAdjustmentBehavior) {
         @strongify(self)
-        self.contentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
+        if (@available(iOS 11.0, *)) {
+            self.contentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
+        } else {
+            // Fallback on earlier versions
+        }
         return self;
     };
 }
-
 @end

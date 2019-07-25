@@ -20,6 +20,6 @@
 - (UIScrollView *(^)(BOOL))YAlwaysBounceHorizontal;
 - (UIScrollView *(^)(BOOL))YPagingEnabled;
 - (UIScrollView *(^)(BOOL))YScrollEnabled;
-- (UIScrollView *(^)(UIScrollViewContentInsetAdjustmentBehavior))YContentInsetAdjustmentBehavior ;
+- (UIScrollView *(^)(UIScrollViewContentInsetAdjustmentBehavior))YContentInsetAdjustmentBehavior  API_AVAILABLE(ios(11.0));
 
 @end
