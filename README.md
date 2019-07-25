@@ -1,5 +1,6 @@
 # UIBaseDSL
 
+主要实现了 UIView、UIButton、UILabel、UIImageView、UIScrollView、UITextfield等的链式调用。
 示例：
 
 ```
