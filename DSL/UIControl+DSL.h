@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIControl (DSL)
-- (UIControl *(^)(bool))YEnable;
-- (UIControl *(^)(bool))YSelected;
-- (UIControl *(^)(bool))YHighlighted;
+- (UIControl *(^)(BOOL))YEnable;
+- (UIControl *(^)(BOOL))YSelected;
+- (UIControl *(^)(BOOL))YHighlighted;
 @end
 

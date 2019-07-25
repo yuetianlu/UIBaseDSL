@@ -11,27 +11,27 @@
 
 @implementation UIControl (DSL)
 
-- (UIControl *(^)(bool))YEnable {
+- (UIControl *(^)(BOOL))YEnable {
     @weakify(self)
-    return ^UIControl *(bool enable) {
+    return ^UIControl *(BOOL enable) {
         @strongify(self)
         self.enabled = enable;
         return self;
     };
 }
 
-- (UIControl *(^)(bool))YSelected {
+- (UIControl *(^)(BOOL))YSelected {
     @weakify(self)
-    return ^UIControl *(bool selected) {
+    return ^UIControl *(BOOL selected) {
         @strongify(self)
         self.selected = selected;
         return self;
     };
 }
 
-- (UIControl *(^)(bool))YHighlighted {
+- (UIControl *(^)(BOOL))YHighlighted {
     @weakify(self)
-    return ^UIControl *(bool highlighted) {
+    return ^UIControl *(BOOL highlighted) {
         @strongify(self)
         self.highlighted = highlighted;
         return self;

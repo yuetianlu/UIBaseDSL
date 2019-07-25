@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (DSL)
-
+- (UIImageView *(^)(UIImage *))YImage;
+- (UIImageView *(^)(UIImage *))YHighlightedImage;
+- (UIImageView *(^)(BOOL))YHighlighted;
 @end

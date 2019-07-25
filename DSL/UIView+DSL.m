@@ -56,9 +56,9 @@
     };
 }
 
-- (UIView *(^)(bool))YUserInteractionEnabled {
+- (UIView *(^)(BOOL))YUserInteractionEnabled {
     @weakify(self)
-    return ^UIView *(bool userInteractionEnabled) {
+    return ^UIView *(BOOL userInteractionEnabled) {
         @strongify(self)
         self.userInteractionEnabled = userInteractionEnabled;
         return self;

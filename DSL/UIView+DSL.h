@@ -14,7 +14,7 @@
 - (UIView *(^)(CGFloat))YCornerRadius;
 - (UIView *(^)(CGFloat))YBorderWidth;
 - (UIView *(^)(UIColor *))YBorderColor;
-- (UIView *(^)(bool))YUserInteractionEnabled;
+- (UIView *(^)(BOOL))YUserInteractionEnabled;
 - (UIView *(^)(UIView *))YAddToView;
 @end
 

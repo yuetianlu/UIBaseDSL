@@ -7,9 +7,34 @@
 //
 
 #import "UIImageView+DSL.h"
+#import "YTMacro.h"
 
 @implementation UIImageView (DSL)
 
+- (UIImageView *(^)(UIImage *))YImage {
+    @weakify(self)
+    return ^UIImageView *(UIImage *image) {
+        @strongify(self)
+        self.image = image;
+        return self;
+    };
+}
 
+- (UIImageView *(^)(UIImage *))YHighlightedImage {
+    @weakify(self)
+    return ^UIImageView *(UIImage *image) {
+        @strongify(self)
+        self.highlightedImage = image;
+        return self;
+    };
+}
 
+- (UIImageView *(^)(BOOL))YHighlighted {
+    @weakify(self)
+    return ^UIImageView *(BOOL highlighted) {
+        @strongify(self)
+        self.highlighted = highlighted;
+        return self;
+    };
+}
 @end

@@ -9,5 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface UIScrollView (DSL)
+- (UIScrollView *(^)(CGPoint))YContentOffset;
+- (UIScrollView *(^)(CGSize))YContentSize;
+- (UIScrollView *(^)(UIEdgeInsets))YContentInset;
+- (UIScrollView *(^)(id<UIScrollViewDelegate>))YDelegate;
+- (UIScrollView *(^)(BOOL))YBounces;
+- (UIScrollView *(^)(BOOL))YShowsVerticalScrollIndicator;
+- (UIScrollView *(^)(BOOL))YShowsHorizontalScrollIndicator;
+- (UIScrollView *(^)(BOOL))YAlwaysBounceVertical;
+- (UIScrollView *(^)(BOOL))YAlwaysBounceHorizontal;
+- (UIScrollView *(^)(BOOL))YPagingEnabled;
+- (UIScrollView *(^)(BOOL))YScrollEnabled;
+- (UIScrollView *(^)(UIScrollViewContentInsetAdjustmentBehavior))YContentInsetAdjustmentBehavior ;
 
 @end

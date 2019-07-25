@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (DSL) 
-
+- (UILabel *(^)(NSString *))YText;
+- (UILabel *(^)(UIFont *))YFont;
+- (UILabel *(^)(UIColor *))YTextColor;
+- (UILabel *(^)(NSTextAlignment))YTextAlignment;
+- (UILabel *(^)(NSInteger))YNumberOfLines;
+- (UILabel *(^)(BOOL))YAdjustsFontSizeToFitWidth;
 @end
