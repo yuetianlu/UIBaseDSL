@@ -6,13 +6,10 @@
 //  Copyright © 2019 yuetianlu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface UIButton (DSL)
-
-- (UIButton *(^)(NSString *))title;
-- (UIButton *(^)(UIColor *))titleColor;
-- (UIButton *(^)(UIFont *))setFont;
-- (UIButton *(^)(CGRect))setFrame;
+- (UIButton *(^)(NSString *, UIControlState))YTitle;
+- (UIButton *(^)(UIColor *, UIControlState))YTitleColor;
+- (UIButton *(^)(UIFont *))YFont;
 @end

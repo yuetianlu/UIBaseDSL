@@ -11,38 +11,29 @@
 
 @implementation UIButton (DSL)
 
-- (UIButton *(^)(NSString *))title {
+- (UIButton *(^)(NSString *, UIControlState))YTitle {
     @weakify(self)
-    return ^UIButton *(NSString *title){
+    return ^UIButton *(NSString *title, UIControlState state){
         @strongify(self)
-        [self setTitle:title forState:UIControlStateNormal];
+        [self setTitle:title forState:state];
         return self;
     };
 }
 
-- (UIButton *(^)(UIColor *))titleColor {
+- (UIButton *(^)(UIColor *, UIControlState))YTitleColor {
     @weakify(self)
-    return ^UIButton *(UIColor *color){
+    return ^UIButton *(UIColor *color, UIControlState state){
         @strongify(self)
-        [self setTitleColor:color forState:UIControlStateNormal];
+        [self setTitleColor:color forState:state];
         return self;
     };
 }
 
-- (UIButton *(^)(UIFont *))setFont {
+- (UIButton *(^)(UIFont *))YFont {
     @weakify(self)
     return ^UIButton *(UIFont *font){
         @strongify(self)
         self.titleLabel.font = font;
-        return self;
-    };
-}
-
-- (UIButton *(^)(CGRect))setFrame {
-    @weakify(self)
-    return ^UIButton *(CGRect frame){
-        @strongify(self)
-        self.frame = frame;
         return self;
     };
 }

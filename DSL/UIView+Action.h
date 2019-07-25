@@ -6,7 +6,6 @@
 //  Copyright © 2019 yuetianlu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 typedef void (^VoidClosure)(void);

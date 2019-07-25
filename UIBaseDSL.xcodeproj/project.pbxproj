@@ -15,6 +15,12 @@
 		8C4DC66722E9623E00DD14CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC66622E9623E00DD14CC /* main.m */; };
 		8C4DC67122E962C200DD14CC /* UIButton+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC67022E962C200DD14CC /* UIButton+DSL.m */; };
 		8C4DC67422E964C100DD14CC /* UIView+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC67322E964C100DD14CC /* UIView+Action.m */; };
+		8C4DC67722E96E3C00DD14CC /* UIView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC67622E96E3C00DD14CC /* UIView+DSL.m */; };
+		8C4DC67B22E97F2600DD14CC /* UIControl+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC67A22E97F2600DD14CC /* UIControl+DSL.m */; };
+		8C4DC67E22E980E200DD14CC /* UILabel+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC67D22E980E200DD14CC /* UILabel+DSL.m */; };
+		8C4DC68122E9811E00DD14CC /* UIImageView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC68022E9811E00DD14CC /* UIImageView+DSL.m */; };
+		8C4DC68422E9814400DD14CC /* UIScrollView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC68322E9814400DD14CC /* UIScrollView+DSL.m */; };
+		8C4DC68722E9816500DD14CC /* UITextField+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC68622E9816500DD14CC /* UITextField+DSL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,19 @@
 		8C4DC67022E962C200DD14CC /* UIButton+DSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSL.m"; sourceTree = "<group>"; };
 		8C4DC67222E964B400DD14CC /* UIView+Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Action.h"; sourceTree = "<group>"; };
 		8C4DC67322E964C100DD14CC /* UIView+Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Action.m"; sourceTree = "<group>"; };
+		8C4DC67522E96E2F00DD14CC /* UIView+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DSL.h"; sourceTree = "<group>"; };
+		8C4DC67622E96E3C00DD14CC /* UIView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DSL.m"; sourceTree = "<group>"; };
+		8C4DC67822E9725200DD14CC /* UIBaseDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBaseDSL.h; sourceTree = "<group>"; };
+		8C4DC67922E97F1900DD14CC /* UIControl+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+DSL.h"; sourceTree = "<group>"; };
+		8C4DC67A22E97F2600DD14CC /* UIControl+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+DSL.m"; sourceTree = "<group>"; };
+		8C4DC67C22E980D300DD14CC /* UILabel+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+DSL.h"; sourceTree = "<group>"; };
+		8C4DC67D22E980E200DD14CC /* UILabel+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DSL.m"; sourceTree = "<group>"; };
+		8C4DC67F22E9811200DD14CC /* UIImageView+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DSL.h"; sourceTree = "<group>"; };
+		8C4DC68022E9811E00DD14CC /* UIImageView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DSL.m"; sourceTree = "<group>"; };
+		8C4DC68222E9813700DD14CC /* UIScrollView+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DSL.h"; sourceTree = "<group>"; };
+		8C4DC68322E9814400DD14CC /* UIScrollView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DSL.m"; sourceTree = "<group>"; };
+		8C4DC68522E9815800DD14CC /* UITextField+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+DSL.h"; sourceTree = "<group>"; };
+		8C4DC68622E9816500DD14CC /* UITextField+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DSL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +101,24 @@
 		8C4DC66D22E9628F00DD14CC /* DSL */ = {
 			isa = PBXGroup;
 			children = (
+				8C4DC67822E9725200DD14CC /* UIBaseDSL.h */,
 				8C4DC66E22E962C200DD14CC /* YTMacro.h */,
 				8C4DC67222E964B400DD14CC /* UIView+Action.h */,
 				8C4DC67322E964C100DD14CC /* UIView+Action.m */,
+				8C4DC67522E96E2F00DD14CC /* UIView+DSL.h */,
+				8C4DC67622E96E3C00DD14CC /* UIView+DSL.m */,
+				8C4DC67922E97F1900DD14CC /* UIControl+DSL.h */,
+				8C4DC67A22E97F2600DD14CC /* UIControl+DSL.m */,
 				8C4DC66F22E962C200DD14CC /* UIButton+DSL.h */,
 				8C4DC67022E962C200DD14CC /* UIButton+DSL.m */,
+				8C4DC67C22E980D300DD14CC /* UILabel+DSL.h */,
+				8C4DC67D22E980E200DD14CC /* UILabel+DSL.m */,
+				8C4DC67F22E9811200DD14CC /* UIImageView+DSL.h */,
+				8C4DC68022E9811E00DD14CC /* UIImageView+DSL.m */,
+				8C4DC68222E9813700DD14CC /* UIScrollView+DSL.h */,
+				8C4DC68322E9814400DD14CC /* UIScrollView+DSL.m */,
+				8C4DC68522E9815800DD14CC /* UITextField+DSL.h */,
+				8C4DC68622E9816500DD14CC /* UITextField+DSL.m */,
 			);
 			path = DSL;
 			sourceTree = "<group>";
@@ -162,9 +194,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C4DC65C22E9623C00DD14CC /* ViewController.m in Sources */,
+				8C4DC68122E9811E00DD14CC /* UIImageView+DSL.m in Sources */,
 				8C4DC67122E962C200DD14CC /* UIButton+DSL.m in Sources */,
+				8C4DC67722E96E3C00DD14CC /* UIView+DSL.m in Sources */,
+				8C4DC68722E9816500DD14CC /* UITextField+DSL.m in Sources */,
 				8C4DC66722E9623E00DD14CC /* main.m in Sources */,
+				8C4DC68422E9814400DD14CC /* UIScrollView+DSL.m in Sources */,
+				8C4DC67E22E980E200DD14CC /* UILabel+DSL.m in Sources */,
 				8C4DC65922E9623C00DD14CC /* AppDelegate.m in Sources */,
+				8C4DC67B22E97F2600DD14CC /* UIControl+DSL.m in Sources */,
 				8C4DC67422E964C100DD14CC /* UIView+Action.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
