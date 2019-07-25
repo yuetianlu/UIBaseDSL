@@ -29,12 +29,4 @@
     };
 }
 
-- (UIImageView *(^)(BOOL))YHighlighted {
-    @weakify(self)
-    return ^UIImageView *(BOOL highlighted) {
-        @strongify(self)
-        self.highlighted = highlighted;
-        return self;
-    };
-}
 @end

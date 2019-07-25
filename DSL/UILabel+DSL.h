@@ -13,6 +13,10 @@
 - (UILabel *(^)(UIFont *))YFont;
 - (UILabel *(^)(UIColor *))YTextColor;
 - (UILabel *(^)(NSTextAlignment))YTextAlignment;
+- (UILabel *(^)(NSLineBreakMode))YLineBreakMode;
+- (UILabel *(^)(NSAttributedString *))YAttributedText;
+- (UILabel *(^)(UIColor *))YHighlightedTextColor;
 - (UILabel *(^)(NSInteger))YNumberOfLines;
 - (UILabel *(^)(BOOL))YAdjustsFontSizeToFitWidth;
+- (UILabel *(^)(UIBaselineAdjustment))YBaselineAdjustment;
 @end

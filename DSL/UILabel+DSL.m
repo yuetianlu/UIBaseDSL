@@ -47,6 +47,33 @@
     };
 }
 
+- (UILabel *(^)(NSLineBreakMode))YLineBreakMode {
+    @weakify(self)
+    return ^UILabel *(NSLineBreakMode lineBreakMode) {
+        @strongify(self)
+        self.lineBreakMode = lineBreakMode;
+        return self;
+    };
+}
+
+- (UILabel *(^)(NSAttributedString *))YAttributedText {
+    @weakify(self)
+    return ^UILabel *(NSAttributedString *attributedText) {
+        @strongify(self)
+        self.attributedText = attributedText;
+        return self;
+    };
+}
+
+- (UILabel *(^)(UIColor *))YHighlightedTextColor {
+    @weakify(self)
+    return ^UILabel *(UIColor *highlightedTextColor) {
+        @strongify(self)
+        self.highlightedTextColor = highlightedTextColor;
+        return self;
+    };
+}
+
 - (UILabel *(^)(NSInteger))YNumberOfLines {
     @weakify(self)
     return ^UILabel *(NSInteger numberOfLines) {
@@ -61,6 +88,15 @@
     return ^UILabel *(BOOL adjustsFontSizeToFitWidth) {
         @strongify(self)
         self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth;
+        return self;
+    };
+}
+
+- (UILabel *(^)(UIBaselineAdjustment))YBaselineAdjustment {
+    @weakify(self)
+    return ^UILabel *(UIBaselineAdjustment baselineAdjustment) {
+        @strongify(self)
+        self.baselineAdjustment = baselineAdjustment;
         return self;
     };
 }
