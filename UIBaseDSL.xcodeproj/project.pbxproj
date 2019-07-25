@@ -14,6 +14,7 @@
 		8C4DC66422E9623E00DD14CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4DC66222E9623E00DD14CC /* LaunchScreen.storyboard */; };
 		8C4DC66722E9623E00DD14CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC66622E9623E00DD14CC /* main.m */; };
 		8C4DC67122E962C200DD14CC /* UIButton+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC67022E962C200DD14CC /* UIButton+DSL.m */; };
+		8C4DC67422E964C100DD14CC /* UIView+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC67322E964C100DD14CC /* UIView+Action.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		8C4DC66E22E962C200DD14CC /* YTMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTMacro.h; sourceTree = "<group>"; };
 		8C4DC66F22E962C200DD14CC /* UIButton+DSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSL.h"; sourceTree = "<group>"; };
 		8C4DC67022E962C200DD14CC /* UIButton+DSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSL.m"; sourceTree = "<group>"; };
+		8C4DC67222E964B400DD14CC /* UIView+Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Action.h"; sourceTree = "<group>"; };
+		8C4DC67322E964C100DD14CC /* UIView+Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Action.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +82,11 @@
 		8C4DC66D22E9628F00DD14CC /* DSL */ = {
 			isa = PBXGroup;
 			children = (
+				8C4DC66E22E962C200DD14CC /* YTMacro.h */,
+				8C4DC67222E964B400DD14CC /* UIView+Action.h */,
+				8C4DC67322E964C100DD14CC /* UIView+Action.m */,
 				8C4DC66F22E962C200DD14CC /* UIButton+DSL.h */,
 				8C4DC67022E962C200DD14CC /* UIButton+DSL.m */,
-				8C4DC66E22E962C200DD14CC /* YTMacro.h */,
 			);
 			path = DSL;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				8C4DC67122E962C200DD14CC /* UIButton+DSL.m in Sources */,
 				8C4DC66722E9623E00DD14CC /* main.m in Sources */,
 				8C4DC65922E9623C00DD14CC /* AppDelegate.m in Sources */,
+				8C4DC67422E964C100DD14CC /* UIView+Action.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
