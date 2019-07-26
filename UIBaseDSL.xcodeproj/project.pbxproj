@@ -21,6 +21,7 @@
 		8C4DC68122E9811E00DD14CC /* UIImageView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC68022E9811E00DD14CC /* UIImageView+DSL.m */; };
 		8C4DC68422E9814400DD14CC /* UIScrollView+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC68322E9814400DD14CC /* UIScrollView+DSL.m */; };
 		8C4DC68722E9816500DD14CC /* UITextField+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC68622E9816500DD14CC /* UITextField+DSL.m */; };
+		8C4DC68A22EA98DC00DD14CC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4DC68922EA98DC00DD14CC /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		8C4DC68322E9814400DD14CC /* UIScrollView+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DSL.m"; sourceTree = "<group>"; };
 		8C4DC68522E9815800DD14CC /* UITextField+DSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+DSL.h"; sourceTree = "<group>"; };
 		8C4DC68622E9816500DD14CC /* UITextField+DSL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DSL.m"; sourceTree = "<group>"; };
+		8C4DC68822EA98DC00DD14CC /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		8C4DC68922EA98DC00DD14CC /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				8C4DC65822E9623C00DD14CC /* AppDelegate.m */,
 				8C4DC65A22E9623C00DD14CC /* ViewController.h */,
 				8C4DC65B22E9623C00DD14CC /* ViewController.m */,
+				8C4DC68822EA98DC00DD14CC /* TestViewController.h */,
+				8C4DC68922EA98DC00DD14CC /* TestViewController.m */,
 				8C4DC65D22E9623C00DD14CC /* Main.storyboard */,
 				8C4DC66022E9623E00DD14CC /* Assets.xcassets */,
 				8C4DC66222E9623E00DD14CC /* LaunchScreen.storyboard */,
@@ -199,6 +204,7 @@
 				8C4DC67722E96E3C00DD14CC /* UIView+DSL.m in Sources */,
 				8C4DC68722E9816500DD14CC /* UITextField+DSL.m in Sources */,
 				8C4DC66722E9623E00DD14CC /* main.m in Sources */,
+				8C4DC68A22EA98DC00DD14CC /* TestViewController.m in Sources */,
 				8C4DC68422E9814400DD14CC /* UIScrollView+DSL.m in Sources */,
 				8C4DC67E22E980E200DD14CC /* UILabel+DSL.m in Sources */,
 				8C4DC65922E9623C00DD14CC /* AppDelegate.m in Sources */,
